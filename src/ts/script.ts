@@ -1,7 +1,5 @@
-"use strict"
-
-const btn = document.querySelector('#button');
-const nav = document.querySelector('#nav');
+const btn = document.querySelector('#button') as HTMLElement;
+const nav = document.querySelector('#nav') as HTMLElement;
 
 btn.addEventListener('click', () => {
     if(nav.style.display === 'block') {

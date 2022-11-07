@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="scss/styles.scss">
     <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
-    <link rel="stylesheet" href="../wickedcss.min.css">
-    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="./wickedcss.min.css">
+    <script src="ts/script.ts" defer></script>
     <title>Sunnyside Agency Landing Page</title>
 </head>
 <body>
@@ -20,10 +20,10 @@
             </button>
             <nav id="nav" class="header__navigation">
                 <menu class="header__menu">
-                    <li class="header__list-item"><a class="header__link" href="#">About</a></li>
-                    <li class="header__list-item"><a class="header__link" href="#">Services</a></li>
-                    <li class="header__list-item"><a class="header__link" href="#">Projects</a></li>
-                    <li class="header__list-item"><a class="header__nav-btn" href="#">CONTACT</a></li>
+                    <li class="header__list-item"><a class="header__link" href="#about">About</a></li>
+                    <li class="header__list-item"><a class="header__link" href="#services">Services</a></li>
+                    <li class="header__list-item"><a class="header__link" href="#testimonials">Testimonials</a></li>
+                    <li class="header__list-item"><a class="header__nav-btn" href="#contact">CONTACT</a></li>
                 </menu>
             </nav>
         </div>
@@ -36,7 +36,7 @@
     </header>
 
     <main >
-        <section class="grid">
+        <section class="grid" id="about">
             <div class="grid__image --egg"> <!-- egg image css --></div>
             <div class="grid__text">
                 <h2 class="grid__title">Transform your brand</h2>
@@ -54,7 +54,7 @@
         </section>
 
 
-        <section class="cards">
+        <section class="cards" id="services">
             <div class="cards__container --design">
                 <h2 class="cards__title">Graphic Design</h2>
                 <p class="cards__para">  Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential client’s attention.</p>
@@ -68,7 +68,7 @@
 
 
 
-        <section class="testimonials">
+        <section class="testimonials" id="testimonials">
             <h2 class="testimonials__title">Client Testimonials</h2>
 
             <div class="row-container">
@@ -109,13 +109,13 @@
 
         <nav class="footer__nav">
             <menu class="footer__menu">
-                <li class="footer__list-item"><a class="footer__link" href="">About</a></li>
-                <li class="footer__list-item"><a class="footer__link" href="">Services</a></li>
-                <li class="footer__list-item"><a class="footer__link" href="">Projects</a></li>
+                <li class="footer__list-item"><a class="footer__link" href="#about">About</a></li>
+                <li class="footer__list-item"><a class="footer__link" href="#services">Services</a></li>
+                <li class="footer__list-item"><a class="footer__link" href="#testimonials">Testimonials</a></li>
             </menu>
         </nav>
 
-        <div class="socials-container">
+        <div class="socials-container" id="contact">
             <svg tabindex="0" class="social-icon"  xmlns="http://www.w3.org/2000/svg">
                 <path d="M18.896 0H1.104C.494 0 0 .494 0 1.104v17.793C0 19.506.494 20 1.104 20h9.58v-7.745H8.076V9.237h2.606V7.01c0-2.583 1.578-3.99 3.883-3.99 1.104 0 2.052.082 2.329.119v2.7h-1.598c-1.254 0-1.496.597-1.496 1.47v1.928h2.989l-.39 3.018h-2.6V20h5.098c.608 0 1.102-.494 1.102-1.104V1.104C20 .494 19.506 0 18.896 0z" fill="currentColor" fill-rule="nonzero"/>
             </svg>

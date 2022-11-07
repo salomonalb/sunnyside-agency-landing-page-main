@@ -4,6 +4,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 img, svg {
@@ -38,7 +39,7 @@ $font-barlow:'Barlow', sans-serif;
 $font-frances: 'Fraunces', serif;
 
 $header-blue: hsl(200, 100%, 62%);
-$breakpoint: 769px;
+$breakpoint: 800px;
 
 .header {
     padding-top: 3.5rem;
@@ -311,6 +312,7 @@ $breakpoint: 769px;
         display: block;
         position: relative;
         width: fit-content;
+        width: -moz-fit-content;
         font-family: $font-frances;
         font-size: 1.2rem;
         font-weight: 900;
